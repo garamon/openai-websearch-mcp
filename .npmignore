@@ -1,0 +1,7 @@
+src/
+.vscode/
+.gitignore
+*.config
+*.json
+*.config.js
+*.claude

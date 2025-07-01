@@ -1,0 +1,46 @@
+{
+  "name": "@garamon/openai-websearch-mcp",
+  "version": "0.1.2",
+  "description": "OpenAI Web Search MCP - Model Context Protocol for enhanced web search capabilities",
+  "type": "module",
+  "author": "Koichi Noto",
+  "license": "MIT",
+  "main": "build/index.js",
+  "bin": {
+    "openai-websearch": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,json,md}\""
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.55.0",
+    "@modelcontextprotocol/sdk": "^1.13.2",
+    "openai": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.6",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "^9.30.0",
+    "eslint-config-prettier": "^10.1.5",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
+  },
+  "homepage": "https://github.com/garamon/openai-websearch-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garamon/openai-websearch-mcp.git"
+  },
+  "keywords": [
+    "openai",
+    "websearch",
+    "mcp"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
