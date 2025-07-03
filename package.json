@@ -1,6 +1,6 @@
 {
   "name": "@garamon/openai-websearch-mcp",
-  "version": "0.1.2",
+  "version": "0.2.2",
   "description": "OpenAI Web Search MCP - Model Context Protocol for enhanced web search capabilities",
   "type": "module",
   "author": "Koichi Noto",
