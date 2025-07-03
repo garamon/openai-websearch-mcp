@@ -64,9 +64,11 @@ $ claude mcp add openai-websearch \
 ### Optional Environment Variables
 
 - `OPENAI_MODEL` - The OpenAI model to use (default: `o4-mini`)
-  - **Note**: As of July 2025, using the `o3` model requires your organization to be verified. Please ensure your organization has completed verification before using this model.
+  - **Note**:
+    - As of July 2025, using the `o3` model requires your organization to be verified. Please ensure your organization has completed verification before using this model.
+    - There are tier-based rate limits, so please choose a model that suits your needs.
 - `SEARCH_CONTEXT_SIZE` - Default search context size: `low`, `medium`, or `high` (default: `medium`)
   - If not specified, default value will be used or appropriate context size will be determined based on the request
+  - Context size configuration is not supported for o3, o3-pro, o4-mini, and deep research models. [Search context size](https://platform.openai.com/docs/guides/tools-web-search?api-mode=responses#search-context-size)
 - `REASONING_EFFORT` - Default reasoning effort level: `low`, `medium`, or `high` (default: `medium`)
-  - **Note**: As of July 2025, when using the `o3` model, setting this to `high` may result in rate limit errors due to increased token usage.
 - `REASONING_SUMMARY` - Default summary style: `auto`, `concise`, or `detailed` (default: `auto`)
