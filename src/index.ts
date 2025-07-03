@@ -56,7 +56,7 @@ function parseEnum<T extends Record<string, string>>(
 
 const config = {
   apiKey: process.env.OPENAI_API_KEY || '',
-  model: process.env.OPENAI_MODEL || 'o3',
+  model: process.env.OPENAI_MODEL || 'o4-mini',
   searchContextSize(argValue?: SearchContextSize): SearchContextSize {
     // Priority: Environment variable > Argument value > Default
     const envValue = parseEnum(

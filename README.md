@@ -63,7 +63,7 @@ $ claude mcp add openai-websearch \
 
 ### Optional Environment Variables
 
-- `OPENAI_MODEL` - The OpenAI model to use (default: `o3`)
+- `OPENAI_MODEL` - The OpenAI model to use (default: `o4-mini`)
   - **Note**: As of July 2025, using the `o3` model requires your organization to be verified. Please ensure your organization has completed verification before using this model.
 - `SEARCH_CONTEXT_SIZE` - Default search context size: `low`, `medium`, or `high` (default: `medium`)
   - If not specified, default value will be used or appropriate context size will be determined based on the request
